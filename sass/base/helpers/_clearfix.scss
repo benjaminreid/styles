@@ -1,6 +1,14 @@
 /// A lightweight clearfix
 /// @author [Thierry Koblentz](https://twitter.com/thierrykoblentz)
 /// @link http://cssmojo.com/latest_new_clearfix_so_far/
+/// @example scss
+/// .nav {
+///   @extend %clearfix;
+///
+///   &__item {
+///     float: left;
+///   }
+/// }
 %clearfix {
   &:after {
     clear: both;
