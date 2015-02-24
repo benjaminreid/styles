@@ -6,6 +6,7 @@
   "homepage": "https://github.com/nouveller/styles",
   "description": "A simple set of commonly used helpers, mixins and other reusable components for any project that uses Sass.",
   "scripts": {
-    "docs": "sassdoc ./sass --dest ./sassdoc"
+    "build-docs": "sassdoc ./sass --dest ./sassdoc",
+    "open-docs": "open ./sassdoc/index.html"
   }
 }
