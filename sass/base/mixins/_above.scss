@@ -1,0 +1,17 @@
+/// An aliax of min-width
+/// @author [Benjamin Reid](https://twitter.com/benjaminreid)
+/// @param $width The width which the media query should kick in
+/// @example scss
+/// .column {
+///   width: 50%;
+///
+///   @include above(700px) {
+///     width: 100%;
+///   }
+/// }
+
+@mixin above($width) {
+  @include min-width($width) {
+    @content;
+  }
+}

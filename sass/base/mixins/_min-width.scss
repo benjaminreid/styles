@@ -1,0 +1,17 @@
+/// Apply a min-width media query inline
+/// @author [Benjamin Reid](https://twitter.com/benjaminreid)
+/// @param $width The width which the media query should kick in
+/// @example scss
+/// .column {
+///   width: 50%;
+///
+///   @include min-width(700px) {
+///     width: 100%;
+///   }
+/// }
+
+@mixin min-width($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
