@@ -7,7 +7,7 @@
   "description": "A simple set of commonly used helpers, mixins and other reusable components for any project that uses Sass.",
   "scripts": {
     "watch": "sass --style expanded --watch ./sass/styles.scss:styles.css",
-    "build-docs": "sassdoc ./sass --dest ./sassdoc",
+    "docs": "sassdoc ./sass --dest ./sassdoc",
     "open-docs": "open ./sassdoc/index.html"
   }
 }

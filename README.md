@@ -18,7 +18,7 @@ These can be optionally installed to build the documentation and run various oth
 The documentation can be built locally by running:
 
 ```
-npm run build-docs
+npm run docs
 ```
 
 And opened in your default browser by running:
