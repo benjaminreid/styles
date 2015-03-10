@@ -1,0 +1,17 @@
+/// An aliax of max-width
+/// @author [Benjamin Reid](https://twitter.com/benjaminreid)
+/// @param $width The width which the media query should kick in
+/// @example scss
+/// .column {
+///   width: 50%;
+///
+///   @include below(700px) {
+///     width: 100%;
+///   }
+/// }
+
+@mixin below($width) {
+  @include max-width($width) {
+    @content;
+  }
+}
