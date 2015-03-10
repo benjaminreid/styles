@@ -26,3 +26,9 @@ And opened in your default browser by running:
 ```
 npm run open-docs
 ```
+
+You can test out the Sass compilation by running:
+
+```
+npm run watch
+```
