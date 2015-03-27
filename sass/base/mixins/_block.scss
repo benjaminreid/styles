@@ -1,0 +1,15 @@
+/// Generates a BEM block
+/// @author [Benjamin Reid](https://twitter.com/benjaminreid)
+/// @param $name The name of the block you are defining
+/// @example scss
+///   @include block('button') {
+///     display: inline-block;
+///   }
+
+@mixin block($name) {
+  @at-root {
+    .#{$name} {
+      @content;
+    }
+  }
+}
