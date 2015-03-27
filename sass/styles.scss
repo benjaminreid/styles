@@ -1,2 +1,8 @@
 @import "base/import";
 @import "vars";
+
+body {
+  @include below(500px) {
+    background: red;
+  }
+}
