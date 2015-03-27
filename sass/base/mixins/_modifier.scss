@@ -1,0 +1,21 @@
+/// Generates a BEM modifier
+/// @author [Benjamin Reid](https://twitter.com/benjaminreid)
+/// @param $name The name of the modifier you are defining
+/// @example scss
+///   @include block('button') {
+///     display: inline-block;
+///
+///     @include element('icon') {
+///       vertical-align: middle;
+///
+///       @include modifier('large') {
+///         font-size: 2em;
+///       }
+///     }
+///   }
+
+@mixin modifier($name) {
+  &--#{$name} {
+    @content;
+  }
+}
