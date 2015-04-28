@@ -1,0 +1,17 @@
+/// Generates a BEM element
+/// @author [Benjamin Reid](https://twitter.com/benjaminreid)
+/// @param $name The name of the element you are defining
+/// @example scss
+///   @include block('button') {
+///     display: inline-block;
+///
+///     @include element('icon') {
+///       vertical-align: middle;
+///     }
+///   }
+
+@mixin element($name) {
+  &__#{$name} {
+    @content;
+  }
+}

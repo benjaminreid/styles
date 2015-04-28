@@ -8,8 +8,13 @@
 /**
  * @MIXINS
  */
+@import "mixins/above";
+@import "mixins/below";
+@import "mixins/block";
+@import "mixins/element";
 @import "mixins/min-width";
 @import "mixins/max-width";
+@import "mixins/modifier";
 
 /**
  * @RESET
