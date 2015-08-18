@@ -1,0 +1,13 @@
+/// A lightweight clearfix
+/// @author [Sebastian Ekstrom](https://twitter.com/seb_ekstrom)
+/// @link http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+/// @example scss
+/// .modal {
+///   @extend %vertical-align;
+/// }
+
+%vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
